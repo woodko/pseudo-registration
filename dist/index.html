@@ -24,17 +24,76 @@
 <body>
 
 
+<div class="overlay"><div class="bg-im">
+        <img style="position: absolute;" src="images/dist/bgc-3.jpg" alt="">
+        <div class="loader">
+            <img src="images/dist/circle-loading.gif" alt="">
+        </div>
+    </div></div>
+<div class="header-string">
+    <h1></h1>
+    <div class="head-buttons">
+        <div class="reg-button">Регистрация </div>
+        <div class="log-button">Войти</div>
+    </div>
+</div>
+<div class="allscreen">
+    <div class="bg-im">
+        <!-- <img src="images/dist/bgc-3.jpg" alt=""> -->
+    </div>
+    <div class="reg-form">
+        <h3>Регистрация</h3>
+        <form class="form" id="form" method="get">
+            <span class="input-title">Имя</span>
+			<input class="input" type="text" name="name" placeholder="Введите имя" required>
+            <div class="error-message" style="color:red; font-size: 12px;"></div> 
+            <span class="input-title">Ваша эл. почта</span>
+			<input class="input email" type="email" name="email" placeholder="Введите почту" required>
+            <div class="error-message" style="color:red; font-size: 12px;"></div> 
+            <span class="input-title">Ваш телефон</span>
+			<input class="input phone" type="tel" name="phone" placeholder="Введите телефон" required>
+            <div class="error-message" style="color:red; font-size: 12px;"></div>
+            <span class="input-title">Пароль</span>
+			<input class="input" type="password" name="pass" placeholder="Введите пароль" required>
+            <div class="error-message" style="color:red; font-size: 12px;"></div>
+            <span class="input-title">Подтвердите пароль</span>
+			<input class="input" type="password" name="pass-check" placeholder="Подтвердите пароль" required>
+            <div class="error-message" style="color:red; font-size: 12px;"></div>
+			<input type="hidden" name="username" value="">
+			<span class="disclaimer">Нажимая кнопку "Регистрация" я даю согласие на обработку моих персональных данных.</span> 
+			<button class="button-in-form button-form button" value="">Регистрация</button>
+		</form>
+        <div class="add-enter">Уже есть аккаунт? <span class="addenter">Войти<span></div> 
+    </div>
+    <div class="log-form">
+        <h3>Войти</h3>
+        <form class="form" id="form" method="get">
+            <span class="input-title">Имя</span>
+			<input class="input" type="text" name="name" placeholder="Введите имя" required>
+            <div class="error-message" style="color:red; font-size: 12px;"></div> 
+            <span class="input-title">Пароль</span>
+			<input class="input" type="password" name="pass" placeholder="Введите пароль" required>
+            <div class="error-message" style="color:red; font-size: 12px;"></div>
+			<input type="hidden" name="username" value="">
+            <span class="disclaimer">Нажимая кнопку "Войти" я даю согласие на обработку моих персональных данных.</span> 
+			<button class="button-in-form button-form button" value="">Войти</button>
+		</form>
+    </div>
+</div>
 
-<section class="first-screen">
-<h1 style="color: #000;">Hello World!!!++--</h1>
-</section>
+<div id="modal">
+    <div class="reg-modal">
+        <p>Спасибо за регистрацию. Мы свяжемся с вами для уточнения всех возможных деталей.</p>
+        <button id="closeModal" onclick="document.getElementById('modal').style.display='none'">Закрыть</button>
+    </div>
+</div>
 
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/PageScroll2id.min.js"></script>
 	<script src="js/app.min.js"></script>
-	<script>
+	<!-- <script>
 		$(document).ready(function() {
 			$(".form").submit(function() {
 				$.ajax({
@@ -61,7 +120,7 @@
 		});	
 
 			$('.popup_content').magnificPopup({type:'inline', midClick: true});	
-	</script>
-
+	</script> -->
+<script src="js/app.min.js"></script>
 </body>
 </html>
