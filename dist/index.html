@@ -1,34 +1,24 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
-
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
-
-	<title>
-
-	</title>
+	<title></title>
 	<meta name="description" content="">
-
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+	<meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="images/dist/preview.jpg">
 	<link rel="stylesheet" href="css/magnific-popup.css" />
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
-
 <body>
 
 
-        <!-- <img style="position: absolute;" src="images/dist/bgc-3.jpg" alt=""> -->
 <div class="overlay">
-        <div class="loader">
-            <img src="images/dist/circle-loading.gif" alt="">
-        </div>
+    <div class="loader">
+        <img src="images/dist/circle-loading.gif" alt="">
+    </div>
 </div>
 <div class="header-string">
     <h1></h1>
@@ -80,46 +70,12 @@
 		</form>
     </div>
 </div>
-
 <div id="modal">
     <div class="reg-modal">
         <p>Спасибо за регистрацию.<br> Мы свяжемся с вами для уточнения всех возможных деталей.</p>
         <button id="closeModal" onclick="document.getElementById('modal').style.display='none'">Закрыть</button>
     </div>
 </div>
-
-
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/PageScroll2id.min.js"></script>
-	<!-- <script>
-		$(document).ready(function() {
-			$(".form").submit(function() {
-				$.ajax({
-					type: "POST",
-					url: "mail.php",
-					data: $(this).serialize()
-				}).done(function() {
-					$(this).find("input").val("");
-					$('.mfp-close').click();
-					$('.form-alert').css('display','block');
-					$('.button-form').css('display','none');
-					$(".form").trigger("reset");
-				});
-				return false;
-			});
-
-			$('.cross-close').click(function(){
-				$('.form-alert').css('display','none')
-			});
-		});
-
-		$(".link-to").mPageScroll2id({ 
-			scrollSpeed: 300 
-		});	
-
-			$('.popup_content').magnificPopup({type:'inline', midClick: true});	
-	</script> -->
 <script src="js/app.min.js"></script>
 </body>
 </html>
